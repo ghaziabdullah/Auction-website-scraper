@@ -46,23 +46,3 @@ if __name__ == "__main__":
     save_to_csv(products, "all_auction_products.csv")
     print(f"Saved {len(products)} items")
 
-
-# import requests
-
-# url = "https://www.vakantieveilingen.be/gateway/v3/categories"
-
-# querystring = {"page":"1","pageSize":"1","sort" : "popularity"}
-
-# response = requests.request("GET", url, params=querystring)
-
-# resp = response.json()
-# data = resp['data']['blocks']['lots'][0]
-
-# title = print(data['product']['title'])
-# category = print(data['categoryTree']['childCategories'][0]['tagName'])
-# bid_count = print(data['bidCount'])
-# highestBidAmount = print(data['highestBidAmount'])
-# description = print(data['product']['abstract'])
-# rel_url = data['url']
-# abs_url = f"https://www.vakantieveilingen.be{rel_url}"
-# print(abs_url)
